@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var count = 0;
+        for (var half = 0; half <= 2; half++) {
+            for (var gtr = 0; gtr <= 4; gtr++) {
+                for (var dim = 0; dim <= 10; dim++) {
+                    for (var nick = 0; nick <= 20; nick++) {
+                        for (penny = 0; penny <= 100; penny++) {
+                            if (50 * half + 25 * gtr + 10 * dim + 5 * nick + penny == 100) {
+                                count++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        alert(count);
+    </script>
+</body>
+
+</html>
